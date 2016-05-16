@@ -1,5 +1,5 @@
 # song
-Sing a song using php7's pthreads extension
+Sing a song using Multi-Threading in PHP7 w/ pThreads
 
 Sample output:
 
