@@ -1,19 +1,16 @@
 <?php
 declare(strict_types=1);
 
-class Song extends Thread
-{
+class Song extends Thread {
     private $lyric;
     private $times;
 
-    public function __construct(string $line, int $repetitions)
-    {
+    public function __construct(string $line, int $repetitions) {
         $this->lyric = $line;
         $this->times = $repetitions;
     }
 
-    public function run()
-    {
+    public function run() {
         for ($i=0; $i<$this->times; ++$i) {
             echo $this->lyric."\r\n";
             sleep(2);
